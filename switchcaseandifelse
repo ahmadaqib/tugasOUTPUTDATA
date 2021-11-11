@@ -1,0 +1,73 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int nilai;
+
+    cout << "PROGRAM MENAMPILKAN NILAI HURUF MAHASISWA \n";
+    cout << "=========================================== \n \n";
+    cout << "masukkan nilai mahasiswa : ";
+    cin >> nilai;
+
+    cout << endl;
+
+    if (nilai >= 81 && nilai <=100){
+        cout << "nilai \"A\" Sangat Memuaskan \n";
+    }
+
+    else if (nilai >= 66 && nilai <=80){
+        cout << "nilai \"B\" Memuaskan \n";
+    }
+    else if (nilai >= 51 && nilai <=65){
+        cout << "nilai \"C\" Cukup \n";
+    }
+    else if (nilai >= 36 && nilai <=50){
+        cout << "nilai \"D\" Kurang \n";
+    }
+    else if (nilai >= 0 && nilai <=36){
+        cout << "nilai \"E\" Kurang \n";
+    }
+
+    else {
+        cout << "MAAF NILAI YANG ANDA MASUKKAN TIDAK VALID";
+    }
+
+    cout << endl;
+    system("pause");
+    system("cls");
+
+    //switch case 
+    cout << "SWITCH CASE \n";
+    cout << "====================== \n \n";
+    char huruf;
+
+    cout << "masukkan nilai huruf anda (A - E) : ";
+    cin >> huruf;
+
+    switch (huruf) {
+  case 'A':
+    cout << "Pertahankan!" << endl;
+    break;
+  case 'B':
+    cout << "Harus lebih baik lagi" << endl;
+    break;
+  case 'C':
+    cout << "Perbanyak belajar" << endl;
+    break;
+  case 'D':
+    cout << "Jangan keseringan main" << endl;
+    break;
+  case 'E':
+    cout << "Kebanyakan bolos..." << endl;
+    break;
+  default:
+    cout << "Maaf, format nilai tidak sesuai" << endl;
+  }
+    
+
+    return 0;
+
+ //ahmadaqib2021
+
+}
